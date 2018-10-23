@@ -1,0 +1,50 @@
+.set-font {
+    font-family: 'Courier New', monospace, serif;
+    color: black;
+}
+
+.center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.box {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+}
+
+.title {
+    font-size: 40px;
+    margin: 40px 0px;
+}
+
+.expression-box {
+    height: 300px;
+    margin: 40px;
+}
+
+.function-option {
+    font-size: 20px;
+    display: inline-block;
+    width: 10%;
+    min-height: 30px;
+    word-wrap: break-word;
+    margin: 40px 20px;
+    padding: 5px;
+}
+
+.button {
+    font-size: 20px;
+    width: 10%;
+    min-height: 30px;
+    word-wrap: break-word;
+    margin: 40px 20px;
+    padding: 5px;
+}
+
+.grabbable {
+    cursor: grab;
+}

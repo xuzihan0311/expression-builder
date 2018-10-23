@@ -1,28 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import ExpressionBuilder from './components/ExpressionBuilder.js'
 
 class App extends Component {
+
+  add(x,y) {
+      return x + y;
+  }
+
+  subtract(x,y) {
+      return x - y;
+  }
+
+  foo(x,y,z) {
+      return x * y + z;
+  }
+
+  doSomethingComplicated(x) {
+      return x^2;
+  }
+
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+      return (
+          <ExpressionBuilder functions={[this.add, this.subtract, this.foo, this.doSomethingComplicated]} />
+      );
   }
 }
 
-export default App;
+export default App
